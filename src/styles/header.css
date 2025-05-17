@@ -1,0 +1,56 @@
+header {
+    width: 100%;
+    padding-block: 2.8rem;
+    padding-inline: 8%;
+    background-color: black;
+}
+
+#nav_bar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+#nav_logo {
+    font-size: 2rem;
+    color: #e9a209;
+    font-weight: 600;
+    padding-block: 1.25rem;
+    padding-inline: 1.5rem;
+    backdrop-filter: blur(15px);
+    border: 3px solid rgb(255, 153, 0);
+    transform: skewX(-20deg);
+}
+
+#nav_logo:hover {
+    background-color: aliceblue;
+}
+
+.btn--text {
+    display: inline-block; /*Usando display para ter acesso ao transform, elementos com display inline não tem acesso ao transform*/
+    transform: skewX(20deg);
+}
+
+#nav_list{
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+#nav_list a {
+    font-weight: bold;
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: rgba(126, 126, 126, 0.685);
+}
+
+
+.mobile_btn {
+    display: none;
+}
+
+#mobile_menu {
+    display: none;
+}
