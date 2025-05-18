@@ -17,3 +17,20 @@ body {
 }
 
 /* COMPONENTS */
+.btn-default {
+    border: none;
+    background-color: #fe6a0f;
+    border-radius: 1.2rem;
+    padding-inline: 1.4rem;
+    padding-block: 1rem;
+    font-weight: 600;
+    box-shadow: 0px 0px 50px 5px rgba(252, 252, 252, 0.315);
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.btn-default:hover {
+    background-color: #fe6a0f;
+    box-shadow: 0px 0px 20px 5px rgba(252, 252, 252, 0.63);
+    transform: scale(1.10);
+}

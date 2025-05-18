@@ -9,6 +9,8 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         <title>Ladding Page-Burger</title>
     </head>
     <body>
@@ -16,26 +18,27 @@
             <nav id="nav_bar" aria-label="Menu principal">
                 <a href="index.html">
                     <div id="nav_logo">
-                        <span class="btn--text">Burger</span>
-                        <i class="fa-solid fa-fire-burner" aria-hidden="true"></i>
-                        <span>Gui</span>
+                        <span class="align--text">Burger</span>
+                        <i class="fa-solid fa-fire-burner align--text" aria-hidden="true"></i>
+                        <span class="align--text">Gui</span>
                     </div>
                 </a>
 
 
                 <ul id="nav_list">
-                    <li class="nav_item"><a href="#home">Início</a></li>
+                    <li class="nav_item active"><a href="#home">Início</a></li>
                     <li class="nav_item"><a href="#menu">Cardápio</a></li>
                     <li class="nav_item"><a href="#reviews">Avaliações</a></li>
                 </ul>
 
                 <button class="btn-default" aria-label="Fazer pedido">Fazer pedido</button>
-                <button class="mobile_btn">
+                
+                <button id="mobile_btn" class="mobile_btn">
                     <i class="fa-solid fa-bars"></i> <!--Menu Burguer-->
                 </button>
             </nav>
             <div id="mobile_menu">
-                <ul id="nav_list">
+                <ul id="mobile_nav_list">
                     <li class="nav_item"><a href="#home">Início</a></li>
                     <li class="nav_item"><a href="#menu">Cardápio</a></li>
                     <li class="nav_item"><a href="#reviews">Avaliações</a></li>
@@ -44,5 +47,18 @@
                 <button class="btn-default" aria-label="Fazer pedido">Fazer pedido</button>
             </div>
         </header>
+
+        <main id="container">
+            <section id="home">
+                <div class="home_left">
+                    <h1>O hambuerger mais delicioso😋</h1>
+                </div>
+                <div class="home_banner">
+
+                </div>
+            </section>
+        </main>
+
+        <script src="src/javascript/script.js"></script>
     </body>
 </html>
